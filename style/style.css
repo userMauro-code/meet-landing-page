@@ -1,0 +1,23 @@
+/*-----------mobile first-----------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.logo__container .logo__header {
+    height: 2em;
+}
+
+.picture__box .img__mobile {
+    height: 12em;
+    background-position: center;
+    margin: 4em 0 4em 0;
+}
