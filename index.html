@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="./style/style.css">
   <title>Frontend Mentor | Meet landing page</title>
@@ -13,50 +15,42 @@
     <div class="logo__container">
       <img src="./assets/logo.svg" class="logo__header" alt="">
     </div>
-    <picture class="picture__box">
-      <source srcset="./assets/desktop/image-hero-left.png" media="(min-width: 1024px)" class="img__desktop right" >
-      <source srcset="./assets/desktop/image-hero-right.png" media="(min-width: 1024px)" class="img__desktop left" alt="">
-      <img src="./assets/tablet/image-hero.png" class="img__tablet img__mobile" alt="">
-    </picture>
-    <h1>Group Chat for Everyone</h1>
-    <p>  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-    <button>Download v1.3</button>
-    <button>What is it?</button>
-    <span>01</span>
-    <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="">
-    <img src="./assets/desktop/image-women-videochatting.jpg" alt="">
-    <img src="./assets/desktop/image-men-in-meeting.jpg" alt="">
-    <img src="./assets/desktop/image-man-texting.jpg" alt="">
-    <span>Built for modern use</span>
-    <h2>Smarter meetings, all in one place</h2>
-    <p>Send messages, share files, show your screen, and record your meetings — all in one 
-    workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
-    <span>02</span>
-    <picture>
-      <source srcset="./assets/desktop/image-footer.jpg" media="(min-width: 1024px)">
-      <source srcset="./assets/mobile/image-footer.jpg" media="(min-width: 768px)">
-      <img src="./assets/tablet/image-footer.jpg" alt="">
-    </picture>
-
-    <h2>Experience more together</h2>
-    <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-    <button>Download v1.3</button>
+      <div class="title__box">
+        <img src="./assets/desktop/image-hero-left.png" class="img__desktop right" >
+        <div class="container__title">
+          <h1 class="title__main">Group Chat<br> for Everyone</h1> 
+          <p class="description__title">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+          <div class="button__box">
+            <button class="button__1 button">Download <span class="button__style">v1.3</span></button>
+            <button class="button__2 button">What is it?</button>
+          </div>
+        </div> 
+        <img src="./assets/desktop/image-hero-right.png" class="img__desktop left" alt="">
+      </div>    
+    <div class="main__principal">
+      <div class="decoration__number">
+        <div class="line__div"></div>
+        <span>01</span>
+      </div>    
+      <div class="box__image box__grid">
+        <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="">
+        <img src="./assets/desktop/image-women-videochatting.jpg" alt="">
+        <img src="./assets/desktop/image-men-in-meeting.jpg" alt="">
+        <img src="./assets/desktop/image-man-texting.jpg" alt=""> 
+      </div>
+      <h2>Built for modern use</h2>
+      <h2>Smarter meetings, all in one place</h2>
+      <p>Send messages, share files, show your screen, and record your meetings — all in one 
+      workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+      <div class="decoration__number">
+       <span>02</span> 
+      </div>
+    </div>
+    <div class="footer__main">
+      <h2>Experience more together</h2>
+      <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+      <button>Download v1.3</button>
+    </div>
   </main>
-
-
- 
-  
-
-  
-  
-
- 
-
-  
-
-  
-
-
-  
 </body>
 </html>
