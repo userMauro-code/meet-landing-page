@@ -1,10 +1,11 @@
-/*-----------mobile first-----------*/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Red Hat Display";
 }
+/*-----------desktop-----------*/
 
 body {
     width: 100vw;
@@ -29,6 +30,10 @@ body {
     display: flex;
     flex-direction: row;
     gap: 6em;
+}
+
+.title__box .hero__tablet {
+    display: none;
 }
 
 .title__box .container__title {
@@ -200,8 +205,110 @@ body {
     color: #cea3ff;
 }
 
+/*------------------------------------tablet--------------------------------------------*/
+
 @media (min-width: 768px) and (max-width: 1023px) {
+    .title__box> .right, .left {
+        display: none;
+    }
+
+    .title__box .hero__tablet {
+        display: block;
+    }
+
+    .title__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main__principal .box__image img{
+       height: 12em;
+    }
+
+    .main__principal .box__built {
+       padding: 0;
+    }
+
+    .main__principal > .box__built .built__sub {
+        max-width: 220px;
+        font-size: 1.4em;
+        margin: auto;
+    } 
+
+    .main__principal > .box__built p {
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .footer__main {
+        height: auto;
+        display: flex; 
+        flex-direction: column;   
+        text-align: center;
+        padding: 2em 0;
+        gap: 2em;
+    }
+
+    .footer__main .footer__p {
+        width: 50%;;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    
     body {
-        background-color: red;
+        max-width: 460px;
+    }
+
+    .main__container {
+        max-width: max-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .title__box> .right, .left {
+        display: none;
+    }
+
+    .title__box .hero__tablet {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+    }
+    
+    .main__principal .box__grid img {
+        height: 120px
+    }
+    
+    .box__grid {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: auto;
+        background-color: rebeccapurple;
+    }
+
+    .box__grid .img__grid3 {
+        grid-column: 1/2 ;
+        grid-row: 2/3;
+    }
+
+   
+
+    .title__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button__box {
+        display: flex;
+        flex-direction: column;
+
     }
 }
