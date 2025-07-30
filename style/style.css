@@ -62,7 +62,7 @@ body, html{
     padding: 0 12em;
 }
 
-.button__box .button {
+ .button {
     border-radius: 50px;
     border: none;
     width: max-content;
@@ -146,14 +146,55 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
     height: 30em;
-    position: absolute;
-    top: 104.5em;
+    position: relative;
     z-index: 10;
+    margin-top: 12em;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.footer__main::before {
+    content: '';
+    display: block;
+    background-color:  rgba(77, 150, 169, 0.7);;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.footer__main > * {
+    position: relative;
+    z-index: 2;
 }
 
 .separador2 {
-    position: relative;
-    top: -2em;
-    margin-top: 0;
+    align-self: center;
+    position: absolute;
     z-index: 20;
+    bottom: 24.5em;
+}
+
+.footer__button {
+    background-color: #855FB1;
+    color: #fff;
+}
+
+.footer__button span {
+    color: #ac81dd;
+}
+
+.footer__title {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.footer__p {
+    max-width: 70%;
+    font-size: .9em;
 }
