@@ -36,9 +36,9 @@ body, html{
 }
 
 .images__container .hero__tablet {    
-    width: 100vw;
+    max-width: 90%;
     height: 12em;
-    object-fit: cover;
+    
 }
 
 .container__title {
@@ -197,4 +197,42 @@ body, html{
 .footer__p {
     max-width: 70%;
     font-size: .9em;
+}
+
+@media (min-width: 700px) {
+    .main__container {
+        max-width: 1023px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .images__container .hero__tablet {
+        height: auto;
+    }
+
+    .button__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+    }
+
+    .box__image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .footer__main {
+        background-image: url(../assets/desktop/image-footer.jpg);
+        width: 100%;
+    }
+
+    .box__built p {
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
 }
